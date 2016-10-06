@@ -1,6 +1,6 @@
 import random
 from time import sleep
-question = input("What is your question?: ")
+question = input("What is your question?: 1")
 number = random.randint(1,7)
 
 print ("Hmmm...thinking")
