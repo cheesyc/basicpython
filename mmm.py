@@ -28,4 +28,5 @@ def median (srted):
     return srted((howmany + 1)/2)
 
 def mode (num):
-    
+    for i in howmany:
+        if 
