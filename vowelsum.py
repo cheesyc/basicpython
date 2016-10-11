@@ -1,11 +1,30 @@
 word = input("Word: ")
-lis = []
-lis.append(word)
-list(lis)
-count = len(word)
+trulist = list(word)
+count = len(trulist)
 vowelc = 0
-vowell = ['a','e','i','o','u']
-for i in range(0, count):
-    if lis[i] == vowell:
+vlist = []
+i = 1
+while i < count:
+    if trulist[i] == "a":
         vowelc += 1
-print (vowelc)
+        vlist.append("a")
+        i += 1
+    elif trulist[i] == "e":
+        vowelc += 1
+        vlist.append("e")
+        i += 1
+    elif trulist[i] == "i":
+        vowelc += 1
+        vlist.append("i")
+        i += 1
+    elif trulist[i] == "o":
+        vowelc += 1
+        vlist.append("o")
+        i += 1
+    elif trulist[i] == "u":
+        vowelc += 1
+        vlist.append("u")
+        i += 1
+    else:
+        i += 1
+print (vowelc,"amount of vowels. The vowels in the word are",vlist)

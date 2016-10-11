@@ -1,5 +1,7 @@
 from collections import Counter
 
+inpu = int(input("How many generations after the initial generation?: "))
+
 def life(world, N):
     "Play Conway's game of life for N generations from initial world."
     for g in range(N+1):
@@ -34,4 +36,4 @@ world   = (block | offset(blinker, (5, 2)) | offset(glider, (15, 5)) | offset(to
            | {(18, 2), (19, 2), (20, 2), (21, 2)} | offset(block, (35, 7)))
 
 
-life(world, 5)
+life(world, inpu)
