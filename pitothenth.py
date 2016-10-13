@@ -4,7 +4,7 @@ from decimal import *
 python2 = sys.version_info[0] == 2
 if python2:
 	input = raw_input
-n = int(input("How many digits?: "))
+n = int( input("How many digits?: "))
 
 def factorial(n):
 	"""
