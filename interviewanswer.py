@@ -1,10 +1,5 @@
 import random
 
-for row in range(1,13):
-    for col in range(1,13):
-        print(row*col, end="\t")
-    print()
-
 def whatever(x):
     while x > 0:
         suit = random.randint(1,4)
@@ -17,19 +12,21 @@ def whatever(x):
             card = "King"
 
         if suit == 1:
-            suit = "Spade"
+            suit = "Spades"
         elif suit == 2:
-            suit = "Heart"
+            suit = "Hearts"
         elif suit == 3:
             suit = "Diamons"
         elif suit == 4:
-            suit = "Club"
+            suit = "Clubs"
         thing = card,"of",suit
         cardlist.append(thing)
         x -= 1
 
 if __name__ == "__main__":
     print ("Connor Mitchell")
+    for row in range(1,13):
+        print(*("{:3}".format(row*col) for col in range(1, 13)))
     cardlist = []
     x = int(input("How many cards: "))
     whatever(x)
